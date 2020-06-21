@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container d-flex align-items-center min-vh-100 w-25">
-        <form action="#" class="form-group justify-content-center">
+        <form action="helloPage.php" method="POST" class="form-group justify-content-center">
         <div class="input-group mb-2">
             <input type="email" name="mail" aria-describedby="input1" placeholder="usuario" aria-label="usuario" class="form-control">
             <div class="input-group-prepend">
