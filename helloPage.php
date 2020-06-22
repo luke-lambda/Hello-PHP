@@ -1,15 +1,14 @@
-<?php
-
-require 'requestURL.php';
-
-
-
-if (!isset($_POST['mail'])) {
-    header('HTTP/1.0 401 Unauthorized');
-    exit;
-} else {
-    $cc = getURL("http://ip-api.com/json/?fields=countryCode", 'countryCode');  // Pega o cc de acordo com ip da maquina
-    $hello = getURL("https://fourtonfish.com/hellosalut/?cc={$cc}", 'hello');
-
-    echo html_entity_decode($hello);
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Login | Hello PHP</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 w-50">
+        <?php include 'hello.php' ?>
+    </div>
+</body>
+</html>
