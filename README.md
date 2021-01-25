@@ -1,3 +1,3 @@
 # Hello-PHP
 
-## That's a exercise repo!
+## That's an exercise repo!
